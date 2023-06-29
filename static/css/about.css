@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+
+/* --------------------------------NavBar----------------------------------- */
+.nav{
+    padding: 20px 0px;
+    background-color: #2e51a2;
+}
+
+.nav  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ---------Nav Left side------------ */
+
+.nav .left-side ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav .left-side select {
+    font-size: 20px;
+    border: none;
+    background-color: #2e51a2;
+    color: white;
+    margin-left: 15px;
+}
+
+.nav .left-side .company-name{
+    font-size: 36px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav .left-side ul li{
+    padding: 5px;
+}
+
+
+/* ------------Nav Right side----------- */
+.nav .rigth-side ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav .rigth-side ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #eb6100;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.nav .rigth-side ul li a:hover{
+    background-color: #ff9d56;
+}
+
+.nav .rigth-side ul li .login{
+    background-color: black;
+    padding: 10px 20px;
+    
+}
+
+.nav .rigth-side ul li .login:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.nav .rigth-side ul li{
+    padding: 5px;
+}
+
+
+/* ---------------Main-container------------ */
+.main-container{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------Contact Us------------------------------- */
+.vis-mis{
+    margin-bottom: 40px;
+}
+
+.vis-mis h1{
+    position: relative;
+    color: rgb(60, 60, 60);
+}
+
+.vis-mis h1::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.vis-mis p{
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+}
+
+
+/* ----------------------------Partners------------------------- */
+
+.partners h1{
+    position: relative;
+    color: rgb(60, 60, 60);
+    margin-bottom: 60px;
+}
+
+.partners h1::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.partners .partlogos{
+    margin: 10px 200px;
+}
+
+.partners .partlogos .row-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners .partlogos .row-1 .logos a img{
+    padding: 20px;
+    margin-bottom: 30px;
+    border: solid 1px rgb(127, 127, 127);
+}
+
+
+/* ------------------------------Team-Members--------------------------- */
+
+.Team-members{
+    margin-bottom: 300px;
+}
+
+.Team-members h1{
+    position: relative;
+    color: rgb(60, 60, 60);
+    margin-bottom: 60px;
+}
+
+.Team-members h1::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+
+
+/* -----------------------------Footer------------------------------- */
+
+.footer{
+    background-color: rgb(230, 230, 230);
+}
+
+/* -----------------foot-1-------------------- */
+
+.foot-1{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 20px 200px;
+}
+
+.foot-1 .row-2 ul{
+    list-style-type: none;
+}
+
+.foot-1 .row-2 ul li .heading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.foot-1 .row-2 ul li{
+    padding: 5px 0px;
+   
+}
+
+.foot-1 .row-2 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/* -----------------foot-2-------------------- */
+.foot-2 {
+    background: #2e51a2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.follows ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follows ul li{
+    padding: 10px;
+}
+
+.follows ul li i{
+    color: white;
+    width: 30px;
+    font-size: 30px;
+}
+
+
+.follows .shadow {
+color: rgba(255, 255, 255, 0.5);
+}
+

@@ -1,0 +1,507 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static './css/main.css' %}">
+    <script src="https://kit.fontawesome.com/ca7c85144f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- --------------------------------NavBar-----------------------------------  -->
+    <div class="nav">
+        <nav>
+            <!-- ---------Nav Left side------------ -->
+            <div class="left-side">
+                <ul>
+                    <li><a class="company-name" style="text-decoration: none;" href="/"><img width="60px" src="{%static './images/logo/vct logo.jpeg' %}" alt=""></a></li>
+                    <li>
+                        <select name="" id="">
+                            <option>Bangalore</option>
+                            <option>Mysore</option>
+                            <option>Chennai</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ------------Nav Right side----------- -->
+            <div class="rigth-side">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutUs">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="cart">Cart</a></li>
+                    <li><a href="/orders">Orders</a></li>
+                    {% if request.session.user %}
+                    <li><a href="/logout">Logout<span class="sr-only"></span></a></li>
+                    {% else %}
+                    <li ><a href="/signup">Signup<span class="sr-only"></span></a></li>
+                    <!-- <li><a href="login" class="login">Login</a></li> -->
+                    <li><a href="/login">Login<span class="sr-only">(current)</span></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="margin">
+
+        <div class="back-img">
+            <img src="{%static './images/8227.jpg' %}." alt="">
+        </div>
+
+    <!-- ------------------------------First-Container--------------------------------- -->
+        <div class="First-Container">
+            <!-- ---------------Booking-----------------  -->
+            <div class="Booking">
+                <p class="heading">Services we Provide </p>
+                    <div class="row-1">
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/general-service.png' %}" alt="">
+                                <p>General Services</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/denting-painting.png' %}" alt="">
+                                <p>General Services</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/Ac-Repairs.png' %}" alt="">
+                                <p>General Services</p>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/General-chekup.png' %}" alt="">
+                                <p>General Chekup</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/battery.png' %}" alt="">
+                                <p>Battery services</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="row-Content">
+                                <img src="{%static './images/booking/warranty.png' %}"  alt="">
+                                <p>Insurance Claim</p>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+
+            <!-- ---------------quick-access----------------- -->
+            <!-- <div class="quick-access">
+                <p>Door Step Car Service</p>
+                <div class="center-form">
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Enter your name" name="" id=""><br>
+                            <input type="email" placeholder="Enter your email" name="" id=""><br>
+                            <input type="number" placeholder="Enter your mobile no" maxlength="10" name="" id=""><br>
+                            <button>Request Call Back</button>
+                        </form>                
+                    </div> 
+                </div>
+            </div> -->
+        </div>
+
+        <!-- ------------------------------Second-Container---------------------------------  -->
+        
+
+            <!-- -----------------Advantages------------------
+            <div class="Advantages">
+                <p class="heading">Advantage of Automovill Car service</p>
+            </div> -->
+        </div>
+
+
+
+    <!-- -----------------------------------Price lists----------------------------------- -->
+       
+
+    <!-- --------------------------------Packages-------------------------------------s -->
+    <div class="packages">
+        <p class="header">Scheduled Packages</p>
+        <div class="p-main-row">
+            <div class="p-row">
+                <div class="img">
+                    <img src="{%static './images/Packages/Basic Service Package sq.jpg' %}" alt="">
+                </div>
+                <div class="content">
+                    <h1>Basic Service Package</h1>
+                    <div class="points">
+                        <div class="points1">
+                            <ul>
+                                <li>1000 Kms or 1 Month Warranty</li>
+                                <li>Car Wash</li>
+                                <li>Wiper Fluid Replacement</li>
+                                <li>Battery Water Top-up</li>  
+                            </ul>                    
+                        </div>
+                        <div class="points2">
+                            <ul>
+                                <li> Every 5000 Kms or 3 Months (Recommended)</li>
+                                <li>Engine oil replacement </li>
+                                <li>Interior Vacuuming</li>    
+                            </ul>                    
+                        </div>                    
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-row">
+                <div class="img">
+                    <img src="{%static './images/Packages/Standard Service Package sq.jpg' %}" alt="">
+                </div>
+                <div class="content">
+                    <h1>Standard Service Package</h1>
+                    <div class="points">
+                        <div class="points1">
+                            <ul>
+                                <li>1000 Kms or 1 Month Warranty</li>
+                                <li>Car Scaning</li>
+                                <li>Wiper Fluid Replacement</li>
+                                <li>Battery Water Top-up</li>  
+                            </ul>                    
+                        </div>
+                        <div class="points2">
+                            <ul>
+                                <li> Every 5000 Kms or 3 Months (Recommended)</li>
+                                <li>Engine oil replacement </li>
+                                <li>Interior Vacuuming</li>    
+                            </ul>                    
+                        </div>                    
+                    </div>
+
+                </div>
+            </div>
+            <div class="p-row">
+                <div class="img">
+                    <img src="{%static './images/Packages/Comprehensive Service Package 2 sq.jpg' %}" alt="">
+                </div>
+                <div class="content">
+                    <h1>Comprehensive Service Package</h1>
+                    <div class="points">
+                        <div class="points1">
+                            <ul>
+                                <li>1000 Kms or 1 Month Warranty</li>
+                                <li>Car Wash</li>
+                                <li>Wiper Fluid Replacement</li>
+                                <li>Battery Water Top-up</li>  
+                            </ul>                    
+                        </div>
+                        <div class="points2">
+                            <ul>
+                                <li> Every 5000 Kms or 3 Months (Recommended)</li>
+                                <li>Engine oil replacement </li>
+                                <li>Interior Vacuuming</li>    
+                            </ul>                    
+                        </div>                    
+                    </div>
+
+                </div>
+            </div>            
+        </div>
+
+    </div>
+
+    <!-- ------------------------------------Brands------------------------------------------ -->
+        <div class="Brands">
+            <p>We Serve these many Brands</p>
+            <div class="Brand-logos">
+                <div class="logo-div">
+                    <div class="logo-row">
+                        <div class="logos">
+                            <img src="{%static './images/Brands/1.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/10.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/11.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/12.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/13.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/8.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-row">
+                        <div class="logos">
+                            <img src="{%static './images/Brands/14.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/15.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/16.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/17.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/2.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/7.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-row">
+                        <div class="logos">
+                            <img src="{%static './images/Brands/28.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/29.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/3.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/30.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/33.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/34.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-row">
+                        <div class="logos">
+                            <img src="{%static './images/Brands/36.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/38.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/39.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/4.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/42.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/43.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="logo-row">
+                        <div class="logos">
+                            <img src="{%static './images/Brands/44.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/46.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/47.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/5.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/6.jpg' %}" alt="">
+                        </div>
+                        <div class="logos">
+                            <img src="{%static './images/Brands/83.png' %}" alt="">
+                        </div>
+                    </div>                
+                </div>
+
+                <!--  -->
+            </div>
+        </div>
+
+        <!-- -------------------------------Third-Container--------------------------- -->
+        <div class="Third-Container">
+
+            <!-- -------------------Review------------------- -->
+            <div class="review">
+                <p class="heading">Reviews</p>
+                <div class="review-center">
+                    <div class="review-1">
+                        <p class="review-head">Really Convenient for me</p>
+                        <p class="para">This is one of the best places for car service. Servicer supervisor Mr. Bitto was very soft spoken and professional and got the car service done with best quality and within reasonable price. I would definitely recommend this place for any car related issues.</p>
+                        <p class="by">Sujith Sharma</p>
+                    </div>                    
+                </div>
+
+
+            </div>
+            <!-- ---------------------Achievements-------------------
+            <div class="achievements">
+                <p class="heading">Our Achievements</p>
+            </div> -->
+        </div>
+        
+
+    </div>
+
+
+    <!-- --------------------------------footer------------------------------- -->
+        <div class="footer">
+            <div class="foot-1">
+                <div class="row-2">
+                    <ul>
+                        <li><p class="heading">General</p></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Insurance</a></li>
+                        <li><a href="">Coupon</a></li>
+                        <li><a href="">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="row-2">
+                    <ul>
+                        <li><p class="heading">Company</p></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>                
+                </div>
+                <div class="row-2">
+                    <ul>
+                        <li><p class="heading">Services</p></li>
+                        <li><a href="">General Service</a></li>
+                        <li><a href="">Denting & Painting</a></li>
+                        <li><a href="">General Health Checkup</a></li>
+                        <li><a href="">AC Services</a></li>
+                        <li><a href="">Others</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="row-2">
+
+                </div> -->
+
+
+
+            </div>
+
+
+            <div class="foot-2">
+                <div class="follows">
+                    <ul>
+                        <li class="shadow">Follow Us</li>
+                        <li><a href=""> <i class="fa-brands fa-fw fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-fw fa-twitter-square"></i></a> </li>
+                        <li><a href=""><i class="fa-brands fa-fw fa-instagram-square"></i></a> </li>
+                        <li><a href=""> <i class="fa-brands fa-fw fa-discord"></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="follows">
+                    <ul>
+                        <li class="shadow">Get the App</li>
+                        <li><a href=""> <img src="{%static './images/Contact/car-service-history.png' %}" alt=""></a></li>
+                        <li><a href=""><img src="{%static './images/Contact/badge_googleplay.png' %}" alt=""></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
+ <!-- <table >
+                    <tr class="shadow1" >
+                        <td>Services</td>
+                        <td>Price</td>
+                        <td>Add to cart</td>
+                    </tr> -->
+                    
+                    <!-- <div >
+                    <tr>
+                        <td>{{product.services}}</td>
+                        <td>{{product.price}}</td>
+                        <td></td>
+                    </tr>
+                    
+                </div> -->
+                    <!-- <tr class="shadow">
+                        <td>{{product.services}}	</td>
+                        <td>{{product.price}}</td>
+                        <td>
+                            <form action="/#1" class="col-2 " method="post">
+								{% csrf_token %}
+								<input hidden type="text" name="product" value="1">
+								<input hidden type="text" name="remove" value="True">
+								<input type="submit" value=" - " class="btn btn-block btn-success border-right">
+							</form>
+                            <form action="/#1" class="col-2 " method="post">
+								{% csrf_token %}
+								<input hidden type="text" name="product" value="1">
+								<input type="submit" value=" + " class="btn btn-block btn-success border-left">
+							</form>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td>Comprehensive Service</td>
+                        <td>3099</td>
+                        <td></td>
+                    </tr>
+                    <tr class="shadow">
+                        <td>AC Gas CheckUp	</td>
+                        <td>899</td>
+                        <td></td>
+                    </tr>
+                    <tr >
+                        <td>AC Service</td>
+                        <td>1499</td>
+                        <td></td>
+                    </tr>
+                    <tr class="shadow">
+                        <td>Wheel Alignment	 </td>
+                        <td>199</td>
+                        <td></td>
+                    </tr>
+                    <tr >
+                        <td>Wheel Balancing	</td>
+                        <td>199</td>
+                        <td></td>
+                    </tr>
+                    <tr class="shadow">
+                        <td>Ceramic Coating	 </td>
+                        <td>9999</td>
+                        <td></td>
+                    </tr>
+                    <tr >
+                        <td>Rubbing Polishing</td>
+                        <td>699</td>
+                        <td></td>
+                    </tr>
+                    <tr class="shadow">
+                        <td>Complete Car wash	</td>
+                        <td>399</td>
+                        <td></td>
+                    </tr>
+                    <tr >
+                        <td>Interior Cleaning</td>
+                        <td>699</td>
+                        <td></td>
+                    </tr>
+                    <tr class="shadow">
+                        <td> Full Body Dent Paint</td>
+                        <td>15999</td>
+                        <td>
+                    </tr> -->
+                <!-- </table>     
+            </div> -->
+            

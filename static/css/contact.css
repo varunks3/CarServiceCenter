@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+
+/* --------------------------------NavBar----------------------------------- */
+.nav{
+    padding: 20px 0px;
+    background-color: #2e51a2;
+}
+
+.nav  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ---------Nav Left side------------ */
+
+.nav .left-side ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav .left-side select {
+    font-size: 20px;
+    border: none;
+    background-color: #2e51a2;
+    color: white;
+    margin-left: 15px;
+}
+
+.nav .left-side .company-name{
+    font-size: 36px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav .left-side ul li{
+    padding: 5px;
+}
+
+
+/* ------------Nav Right side----------- */
+.nav .rigth-side ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav .rigth-side ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #eb6100;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.nav .rigth-side ul li a:hover{
+    background-color: #ff9d56;
+}
+
+.nav .rigth-side ul li .login{
+    background-color: black;
+    padding: 10px 20px;
+    
+}
+
+.nav .rigth-side ul li .login:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.nav .rigth-side ul li{
+    padding: 5px;
+}
+
+
+/* ---------------Main-container------------ */
+.main-container{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------Contact Us------------------------------- */
+.contact-us h1{
+    position: relative;
+    color: rgb(60, 60, 60);
+}
+
+.contact-us h1::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.contact-us p{
+    margin-top: 60px;
+    font-size: 23px;
+}
+
+
+/* -----------------------------------Mail Reach----------------------------- */
+.mail-reach{
+    margin-top: 30px;
+    margin-bottom: 100px
+}
+
+
+.mail-reach p{
+    font-size: 30px;
+    color: rgb(58, 58, 58);
+}
+
+.mail-reach .form{
+    margin-top: 30px;
+}
+
+.mail-reach .form form input{
+    width: 550px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: rgb(220, 220, 220);
+}
+
+.mail-reach .form form textarea{
+    width: 550px;
+    height: 80px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: rgb(220, 220, 220);  
+}
+
+
+
+.mail-reach .form button{
+    width: 90px;
+    height: 30px;    
+    font-size: 15px;
+    border: none;
+    margin-top: 20px;
+    background-color: #2e51a2;
+    color: white;
+    transition: 0.5s;
+}
+
+.mail-reach .form button:hover{
+    background-color: #435d9b;
+}
+
+
+
+/* -----------------------------Footer------------------------------- */
+
+.footer{
+    background-color: rgb(230, 230, 230);
+}
+
+/* -----------------foot-1-------------------- */
+
+.foot-1{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 20px 200px;
+}
+
+.foot-1 .row-2 ul{
+    list-style-type: none;
+}
+
+.foot-1 .row-2 ul li .heading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.foot-1 .row-2 ul li{
+    padding: 5px 0px;
+   
+}
+
+.foot-1 .row-2 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/* -----------------foot-2-------------------- */
+.foot-2 {
+    background: #2e51a2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.follows ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follows ul li{
+    padding: 10px;
+}
+
+.follows ul li i{
+    color: white;
+    width: 30px;
+    font-size: 30px;
+}
+
+
+.follows .shadow {
+color: rgba(255, 255, 255, 0.5);
+}
+

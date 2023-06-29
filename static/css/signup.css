@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* body {
+  max-width: 1000px;
+  margin: auto;
+    border: solid 1px rgb(234, 234, 234);
+} */
+
+
+/* --------------------------------NavBar----------------------------------- */
+.nav{
+  padding: 20px 0px;
+  background-color: #2e51a2;
+}
+
+.nav  nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* ---------Nav Left side------------ */
+
+.nav .left-side ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav .left-side select {
+  font-size: 20px;
+  border: none;
+  background-color: #2e51a2;
+  color: white;
+  margin-left: 15px;
+}
+
+.nav .left-side .company-name{
+  font-size: 36px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav .left-side ul li{
+  padding: 5px;
+}
+
+
+/* ------------Nav Right side----------- */
+.nav .rigth-side ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav .rigth-side ul li a{
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background-color: #eb6100;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.nav .rigth-side ul li a:hover{
+  background-color: #ff9d56;
+}
+
+.nav .rigth-side ul li .login{
+  background-color: black;
+  padding: 10px 20px;
+  
+}
+
+.nav .rigth-side ul li .login:hover{
+  background-color: rgb(58, 58, 58);
+}
+
+.nav .rigth-side ul li{
+  padding: 5px;
+}
+
+.margin{
+  margin-left: 100px;
+  margin-right: 100px;
+  border-left: solid 2px #2e51a2;
+  border-right: solid 2px #2e51a2;
+  border-bottom: solid 2px #2e51a2;
+  padding: 0px 40px;
+}
+
+
+
+form a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+
+/* -----------------------------Footer------------------------------- */
+
+.footer{
+  background-color: rgb(230, 230, 230);
+}
+
+/* -----------------foot-1-------------------- */
+
+.foot-1{
+  display: flex;
+
+  justify-content: space-around;
+  margin-left:  200px;
+  margin-right:  200px;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.foot-1 .row-2 ul{
+  list-style-type: none;
+}
+
+.foot-1 .row-2 ul li .heading{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.foot-1 .row-2 ul li{
+  padding: 5px 0px;
+ 
+}
+
+.foot-1 .row-2 ul li a{
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* -----------------foot-2-------------------- */
+.foot-2 {
+  background: #2e51a2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.follows ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follows ul li{
+  padding: 10px;
+}
+
+.follows ul li i{
+  color: white;
+  width: 30px;
+  font-size: 30px;
+}
+
+
+.follows .shadow {
+color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.h3 {
+  background: rgb(221, 55, 49);
+}
+
+.h3 span {
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.h4 {
+  color: rgb(25, 102, 218);
+  background: #e1e7f5;
+  padding: 5px 10px;
+}
+
+.h5 {
+  color: rgb(78, 112, 204);
+  padding: 5px 10px;
+}
+
+.h6 .h1 {
+  padding-top: 0px;
+  margin-left: 10px;
+}
+
+.h6 .all-ani {
+  background: rgb(25, 102, 218);
+  color: white;
+}
+
+.h6 ul li {
+  margin-bottom: 5px;
+}
+
+.h6 ul li a {
+  color: rgb(25, 102, 218);
+  transition-duration: 500ms;
+}
+
+.h6 ul li a:hover {
+  background: rgb(25, 102, 218);
+  color: white;
+}
+
+.h6 hr {
+  height: 3px;
+  color: black;
+  background: black;
+}
+
+.h7 .top {
+  font-size: 29px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.h7 p {
+  margin-left: 10px;
+}
+
+.h7 .nxt {
+  background: rgb(25, 102, 218);
+  color: white;
+  margin-right: 20px;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+  max-width: 1330px;
+}
+
+table tr .rank {
+  width: 100px;
+  color: white;
+  background: rgb(25, 102, 218);
+  padding: 5px 20px;
+}
+
+table tr .title {
+  color: white;
+  width: 500px;
+  background: rgb(25, 102, 218);
+}
+
+table tr .score {
+  background: rgb(25, 102, 218);
+  width: 100px;
+  color: white;
+}
+
+table tr .y-score {
+  background: rgb(25, 102, 218);
+  width: 100px;
+  color: white;
+}
+
+table tr .status {
+  background: rgb(25, 102, 218);
+  width: 150px;
+  color: white;
+}
+
+table .rank-1 {
+  font-size: 40px;
+  color: rgb(97, 97, 97);
+}
+
+table .y-score-1 {
+  color: rgb(161, 161, 161);
+  font-size: 20px;
+}
+
+table .y-score-1 img {
+  width: 30px;
+}
+
+table a {
+  color: white;
+  background: rgb(25, 102, 218);
+  border-radius: 5px;
+}
+
+table .shadow {
+  background: rgb(230, 230, 230);
+}
+
+table .title-1 {
+  display: flex;
+  padding: 10px;
+}
+
+table .title-1 img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+table .score-1 img {
+  width: 35px;
+}
+
+table .score-1 p {
+  width: 40px;
+  margin-top: 2px;
+}
+
+table .rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table .title-1 h4 {
+  color: rgb(25, 102, 218);
+}
+
+table .title-1 p {
+  color: rgb(161, 161, 161);
+}
+
+.next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-btn a {
+  padding: 3 7px;
+  background: rgb(25, 102, 218);
+  color: white;
+  margin-bottom: 70px;
+}
+
+.pop {
+  margin: 20px 25px;
+  background: rgba(226, 119, 155, 0.541);
+  padding: 10px 0px;
+  border: solid rgb(240, 39, 73);
+}
+
+.pop p {
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border: solid 1px rgb(65, 133, 221);
+  margin-top: 10px;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box p {
+  text-align: center;
+  padding: 15px;
+}
+
+.box .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box .one a {
+  min-width: 100px;
+  margin: 5px 10px;
+}
+
+.box .two a {
+  min-width: 100px;
+  margin: 5px 10px;
+}
+
+.one .google {
+  background: white;
+  color: rgba(0, 0, 0, 0.568);
+  box-shadow: 1px 1px 5px 0px black;
+  border-radius: 3px;
+
+  margin-right: 10px;
+}
+
+.one .apple {
+  background: black;
+  color: white;
+
+  border-radius: 3px;
+}
+
+.two .twi {
+  background: rgb(0, 162, 255);
+  color: white;
+
+  border-radius: 3px;
+
+  margin-left: 10px;
+}
+
+.two .fb {
+  background: rgb(31, 80, 172);
+  color: white;
+
+  border-radius: 3px;
+}
+
+.box .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  display: block;
+  color: rgba(0, 0, 0, 0.568);
+  padding: 5px 0px;
+}
+
+.box #input {
+  width: 300px;
+  height: 30px;
+}
+
+.a {
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form .box .a .log {
+  background-color: rgb(25, 102, 218);
+  width: 130px;
+  border: none;
+  color: white;
+}
+
+
+
+.sign input {
+  color: rgb(25, 102, 218);
+  background: rgba(202, 188, 255, 0.753);
+  padding: 5px 33px;
+}
+
+.with {
+  font-size: 25px;
+  color: rgb(25, 102, 218);
+}
+
+
+
+/* -----------------------------Footer------------------------------- */
+
+.footer{
+  background-color: rgb(230, 230, 230);
+}
+
+/* -----------------foot-1-------------------- */
+
+.foot-1{
+  display: flex;
+  background-color: rgb(230, 230, 230);
+  justify-content: space-around;
+  margin-left:  200px;
+  margin-right:  200px;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.foot-1 .row-2 ul{
+  list-style-type: none;
+}
+
+.foot-1 .row-2 ul li .heading{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.foot-1 .row-2 ul li{
+  padding: 5px 0px;
+ 
+}
+
+.foot-1 .row-2 ul li a{
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* -----------------foot-2-------------------- */
+.foot-2 {
+  background: #2e51a2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.follows ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follows ul li{
+  padding: 10px;
+}
+
+.follows ul li i{
+  color: white;
+  width: 30px;
+  font-size: 30px;
+}
+
+
+.follows .shadow {
+color: rgba(255, 255, 255, 0.5);
+}
+

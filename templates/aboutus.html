@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static './css/about.css' %}">
+
+</head>
+<body>
+    <!-- --------------------------------NavBar-----------------------------------  -->
+    <div class="nav">
+        <nav>
+            <!-- ---------Nav Left side------------ -->
+            <div class="left-side">
+                <ul>
+                    <li><a class="company-name" style="text-decoration: none;" href="/"><img width="60px" src="{%static './images/logo/vct logo.jpeg' %}" alt=""></a></li>
+                    <li>
+                        <select name="" id="">
+                            <option>Bangalore</option>
+                            <option>Mysore</option>
+                            <option>Chennai</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ------------Nav Right side----------- -->
+            <div class="rigth-side">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutUs">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="cart">Cart</a></li>
+                    <li><a href="orders">Orders</a></li>
+                    {% if request.session.user %}
+                    <li><a href="/logout">Logout<span class="sr-only"></span></a></li>
+                    {% else %}
+                    <li ><a href="/signup">Signup<span class="sr-only"></span></a></li>
+                    <!-- <li><a href="login" class="login">Login</a></li> -->
+                    <li><a href="/login">Login<span class="sr-only"></span></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <div class="vis-mis">
+            <h1>Our Mission & Vision</h1>
+            <p>A tech-driven multi-brand car service platform, VehicleCare simplifies car servicing through clever and cost-effective solutions. The Tars cars thrives on innovation and strives to bring quality, transparency, and reliability, the three pillars that undergird its business model. Owing to a motley of experts and state of the art equipments, we provide a host of services ranging from the biggest overhauls to the minutest tuning. Our business presence spans across India with workshops in Delhi, Noida, Gurgaon, Jaipur, Chennai, Ahmedabad, Lucknow, Bengaluru, Hyderabad, Jhansi, Mumbai, Chandigarh, Faridabad, and Pune.</p>
+            </div>
+
+
+        <div class="partners">
+            <h1>Our Partners</h1>
+            <div class="partlogos">
+                <div class="row-1">
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep1.jpg' %}" alt=""></a>                         
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep2.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep3.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep4.png' %}" alt=""></a> 
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep5.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep6.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep7.jpg' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep8.jpg' %}" alt=""></a> 
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep10.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep11.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep12.png' %}" alt=""></a> 
+                    </div>
+                    <div class="logos">
+                        <a href=""><img src="{%static './images/Partners/vehiclecarep13.png' %}" alt=""></a> 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="Team-members">
+            <h1>Our Team Members</h1>            
+        </div>
+
+
+
+    </div>
+
+
+    <div class="footer">
+        <div class="foot-1">
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">General</p></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Insurance</a></li>
+                    <li><a href="">Coupon</a></li>
+                    <li><a href="">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Company</p></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>                
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Services</p></li>
+                    <li><a href="">General Service</a></li>
+                    <li><a href="">Denting & Painting</a></li>
+                    <li><a href="">General Health Checkup</a></li>
+                    <li><a href="">AC Services</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </div>
+            <!-- <div class="row-2">
+
+            </div> -->
+
+
+
+        </div>
+
+
+        <div class="foot-2">
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Follow Us</li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-twitter-square"></i></a> </li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-instagram-square"></i></a> </li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-discord"></i></a></li>
+                </ul>
+            </div>
+    
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Get the App</li>
+                    <li><a href=""> <img src="{%static './images/Contact/car-service-history.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{%static './images/Contact/badge_googleplay.png' %}" alt=""></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

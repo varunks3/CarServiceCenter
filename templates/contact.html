@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static './css/contact.css' %}">
+
+</head>
+<body>
+    <!-- --------------------------------NavBar-----------------------------------  -->
+    <div class="nav">
+        <nav>
+            <!-- ---------Nav Left side------------ -->
+            <div class="left-side">
+                <ul>
+                    <li><a class="company-name" style="text-decoration: none;" href="/"><img width="60px" src="{%static './images/logo/vct logo.jpeg' %}" alt=""></a></li>
+                    <li>
+                        <select name="" id="">
+                            <option>Bangalore</option>
+                            <option>Mysore</option>
+                            <option>Chennai</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ------------Nav Right side----------- -->
+            <div class="rigth-side">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutUs">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="cart">Cart</a></li>
+                    <li><a href="orders">Orders</a></li>
+                    {% if request.session.user %}
+                    <li><a href="/logout">Logout<span class="sr-only"></span></a></li>
+                    {% else %}
+                    <li ><a href="/signup">Signup<span class="sr-only"></span></a></li>
+                    <!-- <li><a href="login" class="login">Login</a></li> -->
+                    <li><a href="/login">Login<span class="sr-only">(current)</span></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <p>Reach out to us on +91-000-000-0000 . We are at your service 24/7.</p>
+        </div>
+
+
+        <div class="mail-reach">
+            <p>Get In Touch</p>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Enter your Full Name" name="" id=""><br><br>
+                    <input type="email" placeholder="Enter you email" name="" id=""><br><br>
+                    <input type="text" placeholder="Subject" name="" id=""><br><br>
+                    <textarea name="" placeholder="Your Message" id="" ></textarea><br>
+                        <button>Submit</button>                 
+                </form>
+
+            </div>
+        </div>        
+    </div>
+
+
+    <div class="footer">
+        <div class="foot-1">
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">General</p></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Insurance</a></li>
+                    <li><a href="">Coupon</a></li>
+                    <li><a href="">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Company</p></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>                
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Services</p></li>
+                    <li><a href="">General Service</a></li>
+                    <li><a href="">Denting & Painting</a></li>
+                    <li><a href="">General Health Checkup</a></li>
+                    <li><a href="">AC Services</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </div>
+            <!-- <div class="row-2">
+
+            </div> -->
+
+
+
+        </div>
+
+
+        <div class="foot-2">
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Follow Us</li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-twitter-square"></i></a> </li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-instagram-square"></i></a> </li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-discord"></i></a></li>
+                </ul>
+            </div>
+    
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Get the App</li>
+                    <li><a href=""> <img src="{%static './images/Contact/car-service-history.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{%static './images/Contact/badge_googleplay.png' %}" alt=""></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

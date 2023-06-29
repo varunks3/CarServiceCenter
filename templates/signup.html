@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static './css/signup.css' %}">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- --------------------------------NavBar-----------------------------------  -->
+    <div class="nav">
+        <nav>
+            <!-- ---------Nav Left side------------ -->
+            <div class="left-side">
+                <ul>
+                    <li><a class="company-name" style="text-decoration: none;" href="/"><img width="60px" src="{%static './images/logo/vct logo.jpeg' %}" alt=""></a></li>
+                    <li>
+                        <select name="" id="">
+                            <option>Bangalore</option>
+                            <option>Mysore</option>
+                            <option>Chennai</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ------------Nav Right side----------- -->
+            <div class="rigth-side">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <!-- <li><a href="">Track & Pay</a></li> -->
+                    <li><a href="services">Services</a></li>
+                    <!-- <li><a href="">Insurance</a></li> -->
+                    <li><a href="aboutUs">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    {% if request.session.user %}
+                    <li><a href="/logout">Logout<span class="sr-only">(current)</span></a></li>
+                    {% else %}
+                    <li ><a href="/signup">Signup<span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="login" class="login">Login</a></li> -->
+                    <li><a href="/login">Login<span class="sr-only">(current)</span></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+
+
+
+
+
+<!-- 
+    <div class="h3">
+
+        <span>Last chance to win a free MAL T-shirt! Bunkasai contests close Aug 24.</span>
+    </div> -->
+
+
+    <div class="h4">
+        Sign-Up
+    </div>
+<br><br><br>
+    <!-- <div class="pop">
+        <p>You must first login to see this page</p>
+    </div> -->
+
+    <div class="form">
+        <div class="border">
+
+        </div>
+        <div class="box">
+            <form action="/signup" method="POST">
+                
+                {% csrf_token %}
+
+                {% if error%}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- firstname -->
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" name="firstname"
+                     id="" value="{{values.first_name}}" class="form-control form-control-sm" 
+                     placeholder="">
+                </div>
+
+                <!-- last name -->
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lastname" 
+                    id="" value="{{values.last_name}}" class="form-control form-control-sm"
+                    >
+                </div>
+
+                <!-- phone -->
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" name="phone" 
+                    id="" class="form-control form-control-sm"
+                    value="{{values.phone}}"
+                    placeholder="9876543210"
+                    >
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input required type="email" name="email" id=""
+                    value="{{values.email}}" 
+                    class=" form-control-sm form-control" placeholder="abc@gmail.com">
+                </div>
+
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" 
+                    name="password" 
+                    id=""
+                     class="form-control form-control-sm">
+                </div>
+
+                <!--Checkme button-->
+                
+                <hr>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12">Create an account</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------------footer------------------------------- -->
+    <div class="footer">
+        <div class="foot-1">
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">General</p></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Insurance</a></li>
+                    <li><a href="">Coupon</a></li>
+                    <li><a href="">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Company</p></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>                
+            </div>
+            <div class="row-2">
+                <ul>
+                    <li><p class="heading">Services</p></li>
+                    <li><a href="">General Service</a></li>
+                    <li><a href="">Denting & Painting</a></li>
+                    <li><a href="">General Health Checkup</a></li>
+                    <li><a href="">AC Services</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </div>
+            <!-- <div class="row-2">
+
+            </div> -->
+
+
+
+        </div>
+
+
+        <div class="foot-2">
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Follow Us</li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-twitter-square"></i></a> </li>
+                    <li><a href=""><i class="fa-brands fa-fw fa-instagram-square"></i></a> </li>
+                    <li><a href=""> <i class="fa-brands fa-fw fa-discord"></i></a></li>
+                </ul>
+            </div>
+    
+            <div class="follows">
+                <ul>
+                    <li class="shadow">Get the App</li>
+                    <li><a href=""> <img src="{%static './images/Contact/car-service-history.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{%static './images/Contact/badge_googleplay.png' %}" alt=""></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

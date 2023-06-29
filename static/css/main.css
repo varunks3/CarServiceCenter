@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: fit-content; */
+}
+
+
+/* --------------------------------NavBar----------------------------------- */
+.nav{
+    padding: 20px 0px;
+    background-color: #2e51a2;
+}
+
+.nav  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ---------Nav Left side------------ */
+
+.nav .left-side ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav .left-side select {
+    font-size: 20px;
+    border: none;
+    background-color: #2e51a2;
+    color: white;
+    margin-left: 15px;
+}
+
+.nav .left-side .company-name{
+    font-size: 36px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.nav .left-side ul li{
+    padding: 5px;
+}
+
+
+/* ------------Nav Right side----------- */
+.nav .rigth-side ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav .rigth-side ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #eb6100;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.nav .rigth-side ul li a:hover{
+    background-color: #ff9d56;
+}
+
+.nav .rigth-side ul li .login{
+    background-color: black;
+    padding: 10px 20px;
+    
+}
+
+.nav .rigth-side ul li .login:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.nav .rigth-side ul li{
+    padding: 5px;
+}
+
+
+
+.margin{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-left: solid 2px #2e51a2;
+    border-right: solid 2px #2e51a2;
+    border-bottom: solid 2px #2e51a2;
+    padding: 0px 40px;
+}
+/* -----------------------------------Back-img----------------------------------- */
+
+.back-img img{
+    width: 100%;
+}
+
+/* ------------------------------First-Container--------------------------------- */
+
+
+/* ---------------Booking----------------- */
+
+.First-Container .Booking .heading{
+    font-size: 30px;
+
+    margin-bottom: 80px;
+    position: relative;
+    color: rgb(60, 60, 60);
+}
+
+.First-Container .Booking .heading::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.First-Container .Booking .row-1{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.First-Container .Booking .row-1 .row-Content:hover{
+    transform: scale(1.1);
+}
+
+.First-Container .Booking .row-1 .row-Content{
+    text-align: center;
+    width: 170px;
+    border: solid 1px #ff9d56;
+    padding: 15px 35px;
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.First-Container .Booking .row-1 a{
+    text-decoration: none;
+
+}
+
+
+
+/* ---------------quick-access----------------- */
+
+
+.First-Container .quick-access{
+    margin-top: 100px;
+}
+
+
+.First-Container .quick-access p{
+    font-size: 30px;
+    margin-bottom: 100px;
+    position: relative;
+    color: rgb(60, 60, 60);
+
+}
+
+.First-Container .quick-access p::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+
+.First-Container .quick-access form input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.First-Container .quick-access .center-form{
+    display: flex;
+    justify-content: center;
+}
+
+.First-Container .form{
+    border: solid 1px #ff9d56;
+    padding: 20px ;
+    width: 600px;
+    border-radius: 5px;
+}
+
+
+.First-Container .quick-access button{
+    text-align: center;
+    width: 550px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #eb6100;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.First-Container .quick-access button:hover{
+    background-color: #ff9d56;
+}
+
+
+
+/* ------------------------------Second-Container--------------------------------- */
+
+.Second-Container {
+    margin-top: 100px;
+}
+
+/* -----------------Door-step-service---------------- */
+
+
+.Second-Container .door-step-service .second-center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Second-Container .door-step-service .heading{
+    font-size: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    color: rgb(60, 60, 60);
+}
+
+
+
+.Second-Container .door-step-service .heading::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.Second-Container .door-step-service .second-center .working-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Second-Container .door-step-service .working-div .workings{
+    text-align: center;
+    background: rgb(236, 236, 236);
+    padding: 30px;
+    margin: 0px 20px;
+    border-radius: 50%;
+
+}
+
+.Second-Container .door-step-service .working-div .workings img{
+    width: 70px;
+    height: 70px;
+}
+
+/* -----------------Advantages------------------ */
+
+.Second-Container .Advantages{
+    width: 600px;
+}
+
+.Second-Container .Advantages .heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* ----------------------------Price list-------------------------- */
+.price-list{
+    margin-top: 200px;
+}
+
+
+.price-list .header{
+    font-size: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    color: rgb(60, 60, 60);    
+}
+
+
+.price-list .header::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+
+}
+
+.table table{
+    width: 1200px;
+
+    border-collapse: collapse;
+}
+
+.table table tr td{
+    /* width: 800px; */
+
+    font-size: 20px;
+    padding: 16px; 
+}
+
+.table table .shadow{
+    background: rgba(196, 196, 196, 0.5);
+}
+
+.table table .shadow1{
+    font-weight: bold;
+    background: rgba(196, 196, 196, 0.5);
+}
+
+
+/* --------------------------------Packages----------------------------------- */
+
+.packages{
+    margin-top: 100px;
+}
+
+.packages .header{
+    font-size: 30px;
+    position: relative;
+    color: rgb(60, 60, 60);
+    margin-bottom: 50px;
+}
+
+
+.packages .header::after{
+    content: "";
+    width: 90px;
+    height: 2.4px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.packages .p-main-row{
+    border-top: solid 1px rgb(151, 151, 151);
+    border-left: solid 1px rgb(151, 151, 151);
+    border-right: solid 1px rgb(151, 151, 151);
+}
+
+.packages .p-row{
+
+    display: flex;
+    border-bottom: solid 1px rgb(151, 151, 151);
+    padding: 30px 0px;
+}
+
+.packages .p-row .img{
+    padding: 0px 20px;
+}
+
+.packages .p-row .img img{
+    width: 200px;
+
+}
+
+
+.packages .p-row .content .details{
+    color: rgba(0, 0, 0, 0.687);
+}
+
+.packages .p-row .content .points{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.packages .p-row .content ul{
+    padding-left: 20px;
+    /* display: flex; */
+}
+
+.packages .p-row .content ul li{
+    padding: 5px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.687);
+}
+/* ---------------------------------Brands--------------------------------- */
+
+.Brands{
+    margin-top: 150px;
+}
+
+.Brands p{
+    font-size: 30px;
+    position: relative;
+    color: rgb(60, 60, 60);
+
+}
+
+
+.Brands p::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.Brands .Brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Brands .Brand-logos .logo-div .logo-row {
+    display: flex;
+}
+
+.Brands .Brand-logos .logo-div .logo-row .logos{
+    padding: 40px;
+}
+
+.Brands .Brand-logos .logo-div .logo-row .logos img{
+    width: 130px;
+
+}
+
+
+/* -------------------------------Third-Container--------------------------- */
+
+.Third-Container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+
+/* -------------------Review------------------- */
+
+.Third-Container {
+    margin-bottom: 100px;
+}
+
+
+.Third-Container .review{
+    width: 100%;
+}
+
+.Third-Container .review .heading{
+    font-size: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    color: rgb(60, 60, 60);
+
+}
+
+
+.Third-Container .review .heading::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #2e51a2;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.Third-Container .review .review-center{
+    display: flex;
+    justify-content: center;
+}
+
+.Third-Container .review-center .review-1 {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    padding-top: 50px;
+    width: 650px;
+    box-shadow: 0px 0px 20px 10px rgb(124, 124, 124);
+    padding: 70px 20px;
+}
+
+.Third-Container .review-center .review-1 .review-head{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 70px;
+}
+
+.Third-Container .review-center .review-1 .para{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.Third-Container .review-center .review-1 .by{
+    text-align: center;
+    font-size: 23px;    
+}
+
+/* ---------------------Achievements------------------- */
+
+.Third-Container .achievements{
+    width: 650px;
+}
+
+.Third-Container .achievements .heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;     
+}
+
+
+
+/* -----------------------------Footer------------------------------- */
+
+.footer{
+    background-color: rgb(230, 230, 230);
+}
+
+/* -----------------foot-1-------------------- */
+
+.foot-1{
+    display: flex;
+
+    justify-content: space-around;
+    margin-left:  200px;
+    margin-right:  200px;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.foot-1 .row-2 ul{
+    list-style-type: none;
+}
+
+.foot-1 .row-2 ul li .heading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.foot-1 .row-2 ul li{
+    padding: 5px 0px;
+   
+}
+
+.foot-1 .row-2 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/* -----------------foot-2-------------------- */
+.foot-2 {
+    background: #2e51a2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.follows ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follows ul li{
+    padding: 10px;
+}
+
+.follows ul li i{
+    color: white;
+    width: 30px;
+    font-size: 30px;
+}
+
+
+.follows .shadow {
+color: rgba(255, 255, 255, 0.5);
+}
+
